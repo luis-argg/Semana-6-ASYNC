@@ -58,4 +58,23 @@ export class UsuarioService{
 
     }
 
+    //Delete
+    async delete(id:number):Promise<void>{
+        try {
+            const users = await this.repository.getUsers();
+
+            const newUsers = users.filter(use => use.id !== id);
+
+            if(newUsers.length === users.length){
+                false;
+            }
+
+            await this.repository.saveUsers(newUsers);
+            console.log("User deleted")
+            
+        } catch (error) {
+            
+        }
+    }
+
 }
