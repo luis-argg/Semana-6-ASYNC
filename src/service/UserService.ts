@@ -21,14 +21,13 @@ export class UserService{
                 return;
             }
 
-            users.push(user);
+            users.push(user);       
 
             await this.repository.saveUsers(users);
 
             console.log("User created successfully");
         } catch (error) {
-            console.log("ERROR when you save a user we");
-            console.log(error)
+            console.log("ERROR " + error);
             
         }
     }
@@ -73,6 +72,7 @@ export class UserService{
             console.log("User deleted")
             
         } catch (error) {
+            console.log("You couldnt update the user")
             
         }
     }

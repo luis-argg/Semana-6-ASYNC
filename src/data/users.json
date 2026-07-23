@@ -1,0 +1,12 @@
+[
+    {
+        "id": 12,
+        "name": "Luis",
+        "lastname": "Argueta",
+        "age": 67,
+        "email": "largueta-2025599",
+        "password": "string",
+        "rol": "ADMIN",
+        "estado": "ACTIVE"
+    }
+]

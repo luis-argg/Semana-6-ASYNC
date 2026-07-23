@@ -1,7 +1,7 @@
-import { menu } from "./menu/menuPrincipal.js";
+import { menuPrincipal } from "./menu/menuPrincipal.js";
 
 async function main(){
-    await menu();
+    await menuPrincipal();
 }
 
 main();

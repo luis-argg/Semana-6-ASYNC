@@ -12,8 +12,7 @@ export class UserRepository{
 
             return JSON.parse(info)
         } catch (error) {
-            console.log("da error we");
-            console.log(error)
+            console.log("ERROR:" + error);
             return [];
             
         }
@@ -29,8 +28,7 @@ export class UserRepository{
             );
             
         } catch (error) {
-            console.log("da error we")
-            console.log(error)
+            console.log("ERROR: " + error)
             
         }
 

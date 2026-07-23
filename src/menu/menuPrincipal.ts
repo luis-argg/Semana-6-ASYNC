@@ -50,6 +50,9 @@ export async function menuPrincipal() {
             case 2:
                 console.table(await service.list());
             break;
+
+            case 3:
+                
         }   
     }
 }
