@@ -1,7 +1,7 @@
 import { readFile, writeFile } from "fs/promises";
 import { User } from "../model/User.js";
 
-export class UsuarioRepository{
+export class UserRepository{
     //Damos la ruta de donde se almacenara mi file users.json
     private route = "./src/data/users.json"
 

@@ -1,8 +1,8 @@
-import { UsuarioRepository } from "../data/UsuarioRepository.js";
+import { UserRepository } from "../data/UserRepository.js";
 import { User } from "../model/User.js";
 
-export class UsuarioService{
-    private repository = new UsuarioRepository();
+export class UserService{
+    private repository = new UserRepository();
 
     //List
     async list():Promise<User[]>{
